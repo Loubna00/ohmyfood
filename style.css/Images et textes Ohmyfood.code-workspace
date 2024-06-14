@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"name": "Images et textes Ohmyfood",
+			"path": "../Images et textes Ohmyfood"
+		},
+		{
+			"name": "index.html",
+			"path": "../index.html"
+		},
+		{
+			"name": "style.css",
+			"path": "."
+		},
+		{
+			"name": "ohmyfood",
+			"path": "../ohmyfood"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "ohmyfood"
+	}
+}
