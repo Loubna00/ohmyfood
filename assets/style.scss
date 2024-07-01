@@ -151,12 +151,6 @@ html {
   }
 }
 
-.tuto {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  padding: 1rem;
-}
-
 .tuto__title {
   margin-top: 0;
 
@@ -227,29 +221,10 @@ html {
   display: block;
 }
 
-.card__title {
-  margin: 0;
-  margin-bottom: 0.25rem;
-}
-
 .card__subtitle {
   margin: 0;
 }
 
-.card__btn {
-  height: 2rem;
-  width: 2rem;
-  background-color: transparent;
-  border: transparent 0px solid;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.card__like {
-  background-color: white !important;
-}
 
 .heroImg {
   max-width: 100%;
@@ -259,139 +234,12 @@ html {
   object-fit: cover;
 }
 
-.hero__btn {
-  border: 0;
-  padding: 0.75rem 1.5rem;
-  font-weight: 500;
-  font-size: 1.1rem;
-  border-radius: 100px;
-  color: white;
-  background-color: rgb(104, 104, 104);
-  background-image: linear-gradient(0deg, #782cd3 0%, #ff46cc 100%);
-  cursor: pointer;
-  transition-duration: 0.25s;
-  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
 
-}
 
-.hero__btn:hover {
-  background-color: white;
-  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
-}
-
-.hero__btn a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.footer {
-  background-color: #353535;
-}
-
-.footer .container {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-}
-
-@media (min-width: 1024px) {
-  .footer .container {
-    flex-direction: row-reverse;
-    align-items: center;
-    gap: 7px;
-  }
-}
-
-.footer__logo {
-  color: white;
-  font-style: "Shrikhand", "cursive";
-  margin: 0;
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-}
-
-@media (min-width: 1024px) {
-  .footer__logo {
-    width: 137px;
-    margin: 0;
-    margin-left: 6rem;
-  }
-}
-
-.footer__list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-@media (min-width: 1024px) {
-  .footer__list {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    height: 114px;
-    gap: 16px;
-  }
-}
-
-.footer__link {
-  color: white;
-  text-decoration: none;
-}
-
-.footer__icon {
-  width: 1.2rem;
-  margin-right: 0.5rem;
-}
-
-@media (min-width: 1024px) {
-  .tuto__title {
-    padding-left: 4rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .tuto__steps {
-    display: flex;
-    max-width: 85%;
-    padding-left: 4rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .tuto__step {
-    flex: 1;
-    margin: 0;
-    margin-left: 2rem;
-  }
-
-  .tuto__step:first-child {
-    margin-left: 0.75rem;
-  }
-}
-
-.tuto__step:first-child {
-  margin-top: 0;
-}
-
-@media (min-width: 1024px) {
-  .restaurants {
-    display: flex;
-    justify-content: center;
-  }
-}
-
-@media (min-width: 1024px) {
-  .cards {
-    grid-template-columns: repeat(2, 1fr);
-    width: 65rem;
-  }
-}
 
 
 
 /*Enlever les doublons*/
-
 
 .container {
   max-width: 1280px;
@@ -411,31 +259,6 @@ html {
   z-index: 1000;
 }
 
-.footer .container {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-}
-
-.footer__list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer__link {
-  color: white;
-  text-decoration: none;
-}
-
-.footer__link:hover {
-  text-decoration: underline;
-}
-
-.footer__icon {
-  width: 1.2rem;
-  margin-right: 0.5rem;
-}
 
 .loader {
   position: fixed;
@@ -490,31 +313,10 @@ html {
   font-weight: 700;
 }
 
-.hero {
-  padding: 2rem;
-  padding-bottom: 5rem;
-  text-align: center;
-  background-color: rgb(250, 250, 250);
-}
-
-.hero__title {
-  margin: 0;
-}
-
-.hero__subtitle {
-  font-weight: 300;
-  margin: 1.5rem 0;
-  padding-bottom: 2rem;
-}
-
 .tuto {
   margin-top: 2rem;
   margin-bottom: 2rem;
   padding: 1rem;
-}
-
-.tuto__title {
-  margin-top: 0;
 }
 
 .tuto__steps {
@@ -522,25 +324,6 @@ html {
   padding: 0;
   list-style: none;
   counter-reset: compteListe;
-}
-
-.tuto__step {
-  padding: 1.5rem;
-  margin: 1rem 0 1rem 0.75rem;
-  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
-  border-radius: 1.25rem;
-  background-color: #f6f6f6;
-  display: flex;
-  position: relative;
-}
-
-.card {
-  background-color: white;
-  border-radius: 1rem;
-  position: relative;
-  text-decoration: none;
-  color: inherit;
-  display: block;
 }
 
 .card__img {
@@ -563,24 +346,9 @@ html {
   right: 0.75rem;
 }
 
-.card__footer {
-  padding: 1rem;
-  position: relative;
-  display: flex;
-  align-items: center;
-}
 
 .card__content {
   flex: 1;
-}
-
-.card__title {
-  margin: 0;
-  margin-bottom: 0.25rem;
-}
-
-.card__subtitle {
-  margin: 0;
 }
 
 .card__btn {
@@ -639,57 +407,10 @@ html {
     position: relative;
   }
 
-  .hero {
-    padding: 2rem;
-    padding-bottom: 5rem;
-    text-align: center;
-    background-color: rgb(250, 250, 250);
-  }
-
-  .hero__title {
-    margin: 0;
-  }
-
-
-  .hero__btn {
-    border: 0;
-    padding: 0.75rem 1.5rem;
-    font-weight: 500;
-    font-size: 1.1rem;
-    border-radius: 100px;
-    color: white;
-    background-color: rgb(104, 104, 104);
-    background-image: linear-gradient(0deg, #782cd3 0%, #ff46cc 100%);
-    cursor: pointer;
-    transition-duration: 0.25s;
-    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
-    cursor: pointer;
-  }
-
-  .hero__btn:hover {
-    background-color: rgb(235, 23, 199);
-    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
-    transition: 10ms;
-  }
-
-  .hero__btn a {
-    text-decoration: none;
-    color: inherit;
-  }
-
-  .hero__btn {
-    text-decoration: none;
-    color: inherit;
-  }
-
   .tuto {
     margin-top: 2rem;
     margin-bottom: 2rem;
     padding: 1rem;
-  }
-
-  .tuto__title {
-    margin-top: 0;
   }
 
   .tuto__steps {
@@ -697,85 +418,6 @@ html {
     padding: 0;
     list-style: none;
     counter-reset: compteListe;
-  }
-
-  @media (min-width: 1024px) {
-    .tuto__steps {
-      display: flex;
-      max-width: 85%;
-      padding-left: 4rem;
-    }
-
-    .tuto__title {
-      padding-left: 4rem;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .tuto__title {
-      padding-left: 4rem;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .footer .container {
-      flex-direction: row-reverse;
-      align-items: center;
-      gap: 7px;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .footer__logo {
-      width: 137px;
-      margin: 0;
-      margin-left: 6rem;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .footer__list {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      height: 114px;
-      gap: 16px;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .tuto__steps {
-      display: flex;
-      max-width: 85%;
-      padding-left: 4rem;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .tuto__step {
-      flex: 1;
-      margin: 0;
-      margin-left: 2rem;
-    }
-
-    .tuto__step:first-child {
-      margin-left: 0.75rem;
-    }
-  }
-
-  .cards {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    -moz-column-gap: 4rem;
-    column-gap: 4rem;
-    row-gap: 4rem;
-  }
-
-  @media (min-width: 1024px) {
-    .cards {
-      grid-template-columns: repeat(2, 1fr);
-      width: 65rem;
-    }
   }
 
   .tuto__step {
@@ -788,17 +430,6 @@ html {
     position: relative;
   }
 
-  @media (min-width: 1024px) {
-    .tuto__step {
-      flex: 1;
-      margin: 0;
-      margin-left: 2rem;
-    }
-
-    .tuto__step:first-child {
-      margin-left: 0.75rem;
-    }
-  }
 
   .tuto__step:first-child {
     margin-top: 0;
@@ -840,27 +471,7 @@ html {
     background-color: #f6f6f6;
   }
 
-  @media (min-width: 1024px) {
-    .restaurants {
-      display: flex;
-      justify-content: center;
-    }
-  }
 
-  .cards {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    -moz-column-gap: 4rem;
-    column-gap: 4rem;
-    row-gap: 4rem;
-  }
-
-  @media (min-width: 1024px) {
-    .cards {
-      grid-template-columns: repeat(2, 1fr);
-      width: 65rem;
-    }
-  }
 
   .card {
     background-color: white;
@@ -903,7 +514,6 @@ html {
     cursor: pointer;
     transition-duration: 0.25s;
     box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
-    cursor: pointer;
   }
 
   .hero__btn:hover {
@@ -916,22 +526,15 @@ html {
     color: inherit;
   }
 
+  .card__footer {
+    padding: 1rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
   .footer {
     background-color: #353535;
-  }
-
-  .footer .container {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-  }
-
-  @media (min-width: 1024px) {
-    .footer .container {
-      flex-direction: row-reverse;
-      align-items: center;
-      gap: 7px;
-    }
   }
 
   .footer__logo {
@@ -942,12 +545,9 @@ html {
     margin-bottom: 1rem;
   }
 
-  @media (min-width: 1024px) {
-    .footer__logo {
-      width: 137px;
-      margin: 0;
-      margin-left: 6rem;
-    }
+  .footer__icon {
+    width: 1.2rem;
+    margin-right: 0.5rem;
   }
 
   .footer__list {
@@ -956,14 +556,10 @@ html {
     margin: 0;
   }
 
-  @media (min-width: 1024px) {
-    .footer__list {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      height: 114px;
-      gap: 16px;
-    }
+  .footer .container {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
   }
 
   .footer__link {
@@ -975,8 +571,145 @@ html {
     text-decoration: underline;
   }
 
-  .footer__icon {
-    width: 1.2rem;
-    margin-right: 0.5rem;
+
+
+
+
+/** MEDIA QUERYS 1024px**/
+@media (min-width: 1024px) {
+  .footer .container {
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 7px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer__list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 114px;
+    gap: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer__logo {
+    width: 137px;
+    margin: 0;
+    margin-left: 6rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer__list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 114px;
+    gap: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .tuto__title {
+    padding-left: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .tuto__steps {
+    display: flex;
+    max-width: 85%;
+    padding-left: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .tuto__step {
+    flex: 1;
+    margin: 0;
+    margin-left: 2rem;
+  }
+
+  .tuto__step:first-child {
+    margin-left: 0.75rem;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .restaurants {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .restaurants {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    width: 65rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .tuto__steps {
+    display: flex;
+    max-width: 85%;
+    padding-left: 4rem;
+  }
+
+  .tuto__title {
+    padding-left: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer__list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 114px;
+    gap: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .tuto__steps {
+    display: flex;
+    max-width: 85%;
+    padding-left: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .tuto__step {
+    flex: 1;
+    margin: 0;
+    margin-left: 2rem;
+  }
+
+  .tuto__step:first-child {
+    margin-left: 0.75rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .tuto__step {
+    flex: 1;
+    margin: 0;
+    margin-left: 2rem;
+  }
+
+  .tuto__step:first-child {
+    margin-left: 0.75rem;
   }
 }
