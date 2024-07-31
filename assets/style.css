@@ -11,17 +11,31 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
+.loader {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  animation: loader 0.01s;
+  animation-delay: 1.75s;
+  animation-fill-mode: both;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .menu.container {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   border-radius: 1rem;
   position: relative;
   text-decoration: none;
   color: inherit;
   display: block;
   top: 50%;
-  width: 1050px;
   bottom: 4rem;
-  padding: 80px;
   height: 1221px;
 }
 
@@ -30,6 +44,8 @@ html {
   justify-content: center;
   font-family: "Shrikhand", sans-serif;
   color: #101010;
+  margin-top: 50px;
+  margin-left: 15px;
 }
 
 .menu__title .header_txt img {
@@ -47,18 +63,30 @@ html {
   justify-content: center;
   text-align: center;
   margin-left: 5px;
+  margin-left: 15px;
 }
 
-.menu__title .menuItem__header {
+.menuItem {
   background-color: white;
-  border-radius: 1rem;
-  position: relative;
-  text-decoration: none;
-  color: inherit;
-  display: block;
-  margin-right: 5%;
-  width: 634px;
-  height: 69px;
+  padding: 1rem;
+  display: flex;
+  border-radius: 0.75rem;
+  margin: 1rem 0;
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+  animation: itemAppear 0.6s;
+  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  animation-fill-mode: both;
+  transform: scale(0);
+  max-width: 100%;
+}
+
+.menuItem__header {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  flex: 1;
 }
 
 .menu__title .submenu {
@@ -80,11 +108,12 @@ html {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  padding: 15px;
 }
 
 .submenu__title {
-  -webkit-text-decoration: underline #99E2D0 3px;
-          text-decoration: underline #99E2D0 3px;
+  -webkit-text-decoration: underline #99e2d0 3px;
+          text-decoration: underline #99e2d0 3px;
   margin-bottom: 9px;
 }
 
@@ -97,6 +126,10 @@ html {
 .menu__confirmation {
   display: flex;
   justify-content: center;
+}
+
+.menuItem:hover .menuItem__confirmation {
+  margin-right: -1rem;
 }
 
 .menuItem__icon {
@@ -128,8 +161,35 @@ html {
 }
 
 .herologo {
-  margin-left: 40%;
+  margin-left: 25%;
   padding-block: 30px;
+}
+
+@media (min-width: 1024px) {
+  .herologo {
+    margin-left: 18%;
+    padding-block: 30px;
+  }
+  .Img {
+    width: 375px;
+    height: 275px;
+    top: 63px;
+    gap: 0px;
+    opacity: 0px;
+  }
+}
+.wrapBtn {
+  margin-left: 43%;
+}
+
+.hero__btn:hover {
+  background-color: white;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+}
+
+.hero__btn a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .hero__btn {
@@ -144,20 +204,6 @@ html {
   cursor: default;
   transition-duration: 0.5s;
   box-shadow: 1.25rem 1.25rem 10px rgba(0, 0, 0, 0.25);
-}
-
-.wrapBtn {
-  margin-left: 43%;
-}
-
-.hero__btn:hover {
-  background-color: white;
-  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
-}
-
-.hero__btn a {
-  text-decoration: none;
-  color: inherit;
 }
 
 .hero {
@@ -192,13 +238,12 @@ html {
 
 .tuto__step {
   padding: 1.5rem;
-  margin: 0px 0px 0rem 0px;
+  margin: 2rem 9px 0 9px;
   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
   border-radius: 1.25rem;
   background-color: #f6f6f6;
   display: flex;
   position: relative;
-  align-items: flex-end;
 }
 
 .tuto__step:last-child {
@@ -208,7 +253,7 @@ html {
 .tuto__step::before {
   counter-increment: compteListe 1;
   content: counter(compteListe) " ";
-  background: #9356DC;
+  background: #9356dc;
   height: 1.5rem;
   width: 1.5rem;
   border-radius: 100px;
@@ -226,6 +271,13 @@ html {
   display: contents;
 }
 
+@media (min-width: 1024px) {
+  .tuto {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 29px;
+  }
+}
 .restaurants {
   padding: 1rem;
   padding-top: 2rem;
@@ -233,22 +285,57 @@ html {
   background-color: #f6f6f6;
   display: flex;
   flex-wrap: wrap;
+  position: center;
 }
 
-@media (min-width: 1440px) {
-  .restaurants {
-    position: center;
+.local {
+  display: flex;
+  padding: 7px 0 20px 87px;
+  justify-content: center;
+  background-color: rgb(243, 243, 243);
+  font-size: 0.9rem;
+  position: relative;
+}
+
+.menu__header {
+  display: flex;
+  justify-content: flex-start;
+}
+
+@media (min-width: 1024px) {
+  .menu__header {
+    justify-content: center;
   }
 }
+.card__like {
+  color: black;
+}
+
 .cards {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   -moz-column-gap: 4rem;
-  column-gap: 4rem;
+       column-gap: 4rem;
   row-gap: 4rem;
-  text-decoration: none;
+  margin-top: 10px;
+}
+@media (min-width: 1024px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    width: 65rem;
+  }
 }
 
+@media (min-width: 1024px) {
+  .local {
+    display: flex;
+    padding: 7px;
+    justify-content: center;
+    background-color: rgb(243, 243, 243);
+    font-size: 0.9rem;
+    position: relative;
+  }
+}
 @media (min-width: 1024px) {
   .cards {
     grid-template-columns: repeat(2, 1fr);
@@ -321,12 +408,11 @@ html {
   padding: 0;
   list-style: none;
   counter-reset: compteListe;
-  display: flex;
   justify-content: space-between;
 }
 
 .card__img {
-  height: 12rem;
+  height: 15rem;
   width: 100%;
   border: transparent solid 0px;
   border-radius: 1rem 1rem 0 0;
@@ -336,53 +422,36 @@ html {
 }
 
 .card__badge {
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   color: #1b6150;
   padding: 0.5rem;
   border-radius: 0.125rem;
   position: absolute;
-  top: 1rem;
-  right: 0.75rem;
+  top: 42px;
+  right: 13px;
 }
 
+@media (min-width: 1024px) {
+  .card__badge1 {
+    padding: unset;
+    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+    border-radius: 1.25rem;
+  }
+}
 .card__content {
   flex: 1;
   text-decoration: none;
   color: #000;
 }
 
-.card__btn {
-  height: 2rem;
-  width: 2rem;
-  background-color: transparent;
-  border: transparent 0px solid;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.card__like {
-  color: rgb(0, 0, 0) !important;
-  text-decoration: none;
-}
-
 /*style.css*/
-.local {
-  display: flex;
-  padding: 1rem;
-  justify-content: center;
-  background-color: rgb(243, 243, 243);
-  font-size: 0.9rem;
-  position: relative;
-}
-
 .search-input {
   font-size: 18px;
   font-weight: bold;
   color: #000;
   border: none;
   background-color: rgb(243, 243, 243);
+  justify-content: center;
 }
 
 .header .logo .local {
@@ -390,7 +459,6 @@ html {
   justify-content: center;
   padding: 1rem 1rem;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
-  /** MEDIA QUERYS 1024px**/
 }
 
 .header .logo .local header {
@@ -436,7 +504,7 @@ html {
 .header .logo .local .tuto__step::before {
   counter-increment: compteListe 1;
   content: counter(compteListe) " ";
-  background: #9356DC;
+  background: #9356dc;
   height: 1.5rem;
   width: 1.5rem;
   border-radius: 100px;
@@ -563,85 +631,55 @@ html {
   text-decoration: underline;
 }
 
-.footer .container {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-  background-color: #353535;
-}
-
 @media (min-width: 1024px) {
-  .footer .container {
-    flex-direction: row-reverse;
-    align-items: center;
-    gap: 7px;
-  }
-}
-@media (min-width: 375px) {
   .header {
     padding: unset;
   }
 }
-@media (min-width: 375px) {
-  .card__badge1 {
-    padding: unset;
+.footer {
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 0px 80px;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+@media (min-width: 1024px) {
+  .footer .container {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: #353535;
+    margin-left: 0px;
   }
 }
-@media (min-width: 375px) {
-  .tuto {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    padding: 29px;
-  }
-}
-@media (min-width: 375px) {
-  .tuto__steps {
-    list-style: none;
-    counter-reset: compteListe;
-    display: block;
-  }
-}
-@media (min-width: 375px) {
+@media (min-width: 1024px) {
   .fa-solid {
     color: #000;
   }
 }
-@media (min-width: 375px) {
-  .herologo {
-    margin-left: 18%;
-    padding-block: 30px;
-  }
-  .Img {
-    width: 375px;
-    height: 275px;
-    top: 63px;
-    gap: 0px;
-    opacity: 0px;
-  }
-}
-@media (min-width: 375px) {
+@media (max-width: px) {
   .menu.container {
-    background-color: #F6F6F6;
+    background-color: #f6f6f6;
     border-radius: 1rem;
     position: relative;
     text-decoration: none;
     color: inherit;
     display: block;
     width: 375px;
-    bottom: 4rem;
-    padding: 19px;
-    height: 1221px;
+    padding: 0px;
   }
 }
-@media (min-width: 375px) {
+@media (min-width: 1024px) {
   .footer__logo {
     width: 137px;
     margin: 0;
-    margin-left: 0;
-    margin-left: 100px;
+    margin-bottom: 19px;
   }
 }
-@media (min-width: 375px) {
+@media (min-width: 1024px) {
   .tuto__step {
     padding: 1.5rem;
     margin: 0px 0px 0rem 0px;
@@ -654,7 +692,26 @@ html {
     gap: 21px;
   }
 }
-@media (min-width: 375px) {
+@media (min-width: 1024px) {
+  .tuto__steps {
+    list-style: none;
+    counter-reset: compteListe;
+    display: block;
+  }
+}
+@media (min-width: 1440px) {
+  .tuto__steps {
+    padding: 1.5rem;
+    margin: 0px 0px 0rem 0px;
+    box-shadow: 0px 0 rgba(0, 0, 0, 0.125);
+    border-radius: 1.25rem;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: flex-end;
+  }
+}
+@media (min-width: 1024px) {
   .cardsmenu {
     padding: 13px;
     box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
@@ -664,13 +721,12 @@ html {
     gap: 21px;
   }
 }
-@media (min-width: 375px) {
-  .card {
-    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
-    border-radius: 1.25rem;
-  }
+.card {
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+  border-radius: 1.25rem;
 }
-@media (max-width: 375px) {
+
+@media (max-width: 1024px) {
   .restaurants {
     padding: 1rem;
     padding-top: 2rem;
@@ -678,7 +734,7 @@ html {
     background-color: #f6f6f6;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 1024px) {
   .hero__btn {
     margin-left: 0px;
     border: 0;
@@ -694,12 +750,11 @@ html {
     box-shadow: 1.25rem 1.25rem 10px rgba(0, 0, 0, 0.25);
   }
 }
-@media (max-width: 375px) {
-  .wrapBtn {
-    margin-left: 86px;
-  }
+.wrapBtn {
+  margin-left: 32%;
 }
-@media (min-width: 375px) {
+
+@media (min-width: 1024px) {
   .footer__list {
     display: unset;
     height: 114px;
@@ -708,7 +763,7 @@ html {
     margin: 0;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
   .footer__list {
     display: flex;
     align-items: center;
@@ -720,73 +775,81 @@ html {
     margin: 0;
   }
 }
-.footer__link {
-  color: white;
-  text-decoration: none;
-}
-
-.footer__link:hover {
-  text-decoration: underline;
-}
-
-.footer__icon {
-  width: 1.2rem;
-  margin-right: 0.5rem;
-}
-
-@media (max-width: 1440px) {
-  .restaurants {
-    padding: 1rem;
-    padding-top: 2rem;
-    padding-bottom: 5rem;
-    background-color: #f6f6f6;
-  }
-}
 @media (min-width: 1024px) {
-  .header .logo .local .footer .container {
+  .footer .container {
     flex-direction: row-reverse;
     align-items: center;
-    gap: 7px;
+    gap: 84px;
+    padding: 10px;
+    margin-top: 90px;
   }
 }
+.card__footer {
+  display: flex;
+  padding: 11px;
+}
+
+.card__btn {
+  padding-right: 5px;
+  background-color: transparent;
+  border: transparent 0px solid;
+  align-self: center;
+}
+
 @media (min-width: 1024px) {
-  .header .logo .local .footer__list {
+  .footer__list {
+    list-style-type: none;
+    padding: 0;
+  }
+  .footer__listElt {
+    display: inline;
+    margin: 0 10px;
+  }
+  .footer__link {
+    color: white;
+    text-decoration: none;
+  }
+  .footer__link:hover {
+    text-decoration: underline;
+  }
+  .footer__icon {
+    width: 1.2rem;
+    margin-right: 0.5rem;
+  }
+  .footer {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 0px 80px;
+  }
+}
+@media (min-width: 1024px) and (min-width: 1024px) {
+  .herologo {
+    margin-left: 43%;
+    padding-block: 30px;
+  }
+}
+@media (min-width: 1024px) and (min-width: 1440px) {
+  .tuto__steps {
+    padding: 1.5rem;
+    margin: 0px 0px 0rem 0px;
+    box-shadow: 0px 0 rgba(0, 0, 0, 0.125);
+    border-radius: 1.25rem;
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    height: 114px;
-    gap: 16px;
+    flex-direction: row;
+    position: relative;
+    align-items: flex-end;
   }
 }
-@media (min-width: 1024px) {
-  .header .logo .local .footer__logo {
-    width: 137px;
-    margin: 0;
-    margin-left: 6rem;
-  }
-}
-@media (min-width: 1024px) {
-  .header .logo .local .footer__list {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    height: 114px;
-    gap: 16px;
-  }
-}
-@media (min-width: 1024px) {
-  .header .logo .local .tuto__title {
-    padding-left: 4rem;
-  }
-}
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (min-width: 1024px) {
   .header .logo .local .tuto__steps {
     display: flex;
     max-width: 85%;
     padding-left: 4rem;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (min-width: 1024px) {
   .header .logo .local .tuto__step {
     flex: 1;
     margin: 0;
@@ -797,25 +860,71 @@ html {
     margin-top: 0;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (min-width: 1024px) {
+  .card__content {
+    flex: 1;
+    text-decoration: none;
+    color: #000;
+    margin-left: 21px;
+    margin-top: 15px;
+  }
+}
+@media (min-width: 1024px) and (min-width: 1024px) {
+  .header .logo .local .footer .container {
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 7px;
+  }
+}
+@media (min-width: 1024px) and (min-width: 1024px) {
+  .header .logo .local .footer__list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 114px;
+    gap: 16px;
+  }
+}
+@media (min-width: 1024px) and (min-width: 1024px) {
+  .header .logo .local .footer__logo {
+    width: 137px;
+    margin: 0;
+    margin-left: 6rem;
+  }
+}
+@media (min-width: 1024px) and (min-width: 1024px) {
+  .header .logo .local .footer__list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 114px;
+    gap: 16px;
+  }
+}
+@media (min-width: 1024px) and (min-width: 1024px) {
+  .header .logo .local .tuto__title {
+    padding-left: 4rem;
+  }
+}
+@media (min-width: 1024px) and (min-width: 1024px) {
   .header .logo .local .restaurants {
     display: flex;
     justify-content: center;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (min-width: 1024px) {
   .header .logo .local .restaurants {
     display: flex;
     justify-content: center;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (min-width: 1024px) {
   .header .logo .local .cards {
     grid-template-columns: repeat(2, 1fr);
     width: 65rem;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (min-width: 1024px) {
   .header .logo .local .tuto__steps {
     display: flex;
     max-width: 85%;
@@ -825,7 +934,7 @@ html {
     padding-left: 4rem;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (min-width: 1024px) {
   .header .logo .local .footer__list {
     display: flex;
     align-items: center;
@@ -834,14 +943,14 @@ html {
     gap: 16px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (min-width: 1024px) {
   .header .logo .local .tuto__steps {
     display: flex;
     max-width: 85%;
     padding-left: 4rem;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (min-width: 1024px) {
   .header .logo .local .tuto__step {
     flex: 1;
     margin: 0;
@@ -851,13 +960,10 @@ html {
     margin-left: 0.75rem;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (min-width: 1024px) {
   .header .logo .local .tuto__step {
     flex: 1;
     margin: 0;
     margin-left: 2rem;
-  }
-  .header .logo .local .tuto__step:first-child {
-    margin-left: 0.75rem;
   }
 }/*# sourceMappingURL=style.css.map */
