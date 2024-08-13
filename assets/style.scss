@@ -711,6 +711,7 @@ html {
     gap: 84px;
     padding: 10px;
     margin-top: 90px;
+    display: flex;
   }
 }
 
@@ -719,287 +720,291 @@ html {
   padding: 11px;
 }
 
+.footer__list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer__listElt {
+  display: inline;
+  margin: 0 10px;
+}
+
+.footer__link {
+  color: white;
+  text-decoration: none;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+}
+
+.footer__icon {
+  width: 1.2rem;
+  margin-right: 0.5rem;
+}
+
+.footer {
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 0px 80px;
+}
+
+.footer__title {
+  color: white;
+  font-family: "Shrikhand", sans-serif;
+  font-size: 23px;
+}
+
 @media (min-width: 1024px) {
-  .footer__list {
-    list-style-type: none;
-    padding: 0;
+  .fa-solid {
+    color: #000;
   }
+}
 
-  .footer__listElt {
-    display: inline;
-    margin: 0 10px;
-  }
-
-  .footer__link {
-    color: white;
-    text-decoration: none;
-  }
-
-  .footer__link:hover {
-    text-decoration: underline;
-  }
-
-  .footer__icon {
-    width: 1.2rem;
-    margin-right: 0.5rem;
-  }
-
-  .footer {
-    width: 100%;
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 0px 80px;
-  }
-
-  @media (min-width: 1024px) {
-    .fa-solid {
-      color: #000;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .tuto__step {
-      padding: 1.5rem;
-      margin: 0px 0px 0rem 0px;
-      box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
-      border-radius: 1.25rem;
-      background-color: #f6f6f6;
-      display: flex;
-      position: relative;
-      align-items: flex-end;
-      gap: 21px;
-    }
-  }
-  @media (min-width: 1024px) {
-    .tuto__steps {
-      list-style: none;
-      counter-reset: compteListe;
-      display: block;
-    }
-  }
-  @media (min-width: 1440px) {
-    .tuto__steps {
-      padding: 1.5rem;
-      margin: 0px 0px 0rem 0px;
-      box-shadow: 0px 0 rgba(0, 0, 0, 0.125);
-      border-radius: 1.25rem;
-      display: flex;
-      flex-direction: row;
-      position: relative;
-      align-items: flex-end;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .cardsmenu {
-      padding: 13px;
-      box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
-      border-radius: 1.25rem;
-      background-color: #f6f6f6;
-      align-items: flex-end;
-      gap: 21px;
-    }
-  }
-
-  .card {
+@media (min-width: 1024px) {
+  .tuto__step {
+    padding: 1.5rem;
+    margin: 0px 0px 0rem 0px;
     box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
     border-radius: 1.25rem;
+    background-color: #f6f6f6;
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+    gap: 21px;
+  }
+}
+@media (min-width: 1024px) {
+  .tuto__steps {
+    list-style: none;
+    counter-reset: compteListe;
+    display: block;
+  }
+}
+@media (min-width: 1440px) {
+  .tuto__steps {
+    padding: 1.5rem;
+    margin: 0px 0px 0rem 0px;
+    box-shadow: 0px 0 rgba(0, 0, 0, 0.125);
+    border-radius: 1.25rem;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: flex-end;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cardsmenu {
+    padding: 13px;
+    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+    border-radius: 1.25rem;
+    background-color: #f6f6f6;
+    align-items: flex-end;
+    gap: 21px;
+  }
+}
+
+.card {
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+  border-radius: 1.25rem;
+}
+
+@media (max-width: 1024px) {
+  .restaurants {
+    padding: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    background-color: #f6f6f6;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero__btn {
+    margin-left: 0px;
+    border: 0;
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+    border-radius: 100px;
+    color: white;
+    background-color: rgb(104, 104, 104);
+    background-image: linear-gradient(0deg, #782cd3 0%, #ff46cc 100%);
+    cursor: default;
+    transition-duration: 0.5s;
+    box-shadow: 1.25rem 1.25rem 10px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.card__btn {
+  padding-right: 5px;
+  background-color: transparent;
+  border: transparent 0px solid;
+  align-self: center;
+}
+
+@media (min-width: 1024px) {
+  .herologo {
+    margin-left: 43%;
+    padding-block: 30px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .tuto__steps {
+    padding: 1.5rem;
+    margin: 0px 0px 0rem 0px;
+    box-shadow: 0px 0 rgba(0, 0, 0, 0.125);
+    border-radius: 1.25rem;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: flex-end;
+  }
+}
+@media (min-width: 1024px) {
+  .header .logo .local .tuto__steps {
+    display: flex;
+    max-width: 85%;
+    padding-left: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header .logo .local .tuto__step {
+    flex: 1;
+    margin: 0;
+    margin-left: 2rem;
   }
 
-  @media (max-width: 1024px) {
-    .restaurants {
-      padding: 1rem;
-      padding-top: 2rem;
-      padding-bottom: 5rem;
-      background-color: #f6f6f6;
-    }
+  .header .logo .local .tuto__step:first-child {
+    margin-left: 0.75rem;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card__content {
+    flex: 1;
+    text-decoration: none;
+    color: #000;
+    margin-left: 21px;
+    margin-top: 15px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header .logo .local .footer .container {
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 7px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header .logo .local .footer__list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 114px;
+    gap: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header .logo .local .footer__logo {
+    width: 137px;
+    margin: 0;
+    margin-left: 6rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header .logo .local .footer__list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 114px;
+    gap: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header .logo .local .tuto__title {
+    padding-left: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header .logo .local .restaurants {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header .logo .local .restaurants {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header .logo .local .cards {
+    grid-template-columns: repeat(2, 1fr);
+    width: 65rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header .logo .local .tuto__steps {
+    display: flex;
+    max-width: 85%;
+    padding-left: 4rem;
   }
 
-  @media (max-width: 1024px) {
-    .hero__btn {
-      margin-left: 0px;
-      border: 0;
-      padding: 0.75rem 1.5rem;
-      font-weight: 500;
-      font-size: 1.1rem;
-      border-radius: 100px;
-      color: white;
-      background-color: rgb(104, 104, 104);
-      background-image: linear-gradient(0deg, #782cd3 0%, #ff46cc 100%);
-      cursor: default;
-      transition-duration: 0.5s;
-      box-shadow: 1.25rem 1.25rem 10px rgba(0, 0, 0, 0.25);
-    }
+  .header .logo .local .tuto__title {
+    padding-left: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header .logo .local .footer__list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 114px;
+    gap: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header .logo .local .tuto__steps {
+    display: flex;
+    max-width: 85%;
+    padding-left: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header .logo .local .tuto__step {
+    flex: 1;
+    margin: 0;
+    margin-left: 2rem;
   }
 
-  .card__btn {
-    padding-right: 5px;
-    background-color: transparent;
-    border: transparent 0px solid;
-    align-self: center;
+  .header .logo .local .tuto__step:first-child {
+    margin-left: 0.75rem;
   }
+}
 
-  @media (min-width: 1024px) {
-    .herologo {
-      margin-left: 43%;
-      padding-block: 30px;
-    }
-  }
-
-  @media (min-width: 1440px) {
-    .tuto__steps {
-      padding: 1.5rem;
-      margin: 0px 0px 0rem 0px;
-      box-shadow: 0px 0 rgba(0, 0, 0, 0.125);
-      border-radius: 1.25rem;
-      display: flex;
-      flex-direction: row;
-      position: relative;
-      align-items: flex-end;
-    }
-  }
-  @media (min-width: 1024px) {
-    .header .logo .local .tuto__steps {
-      display: flex;
-      max-width: 85%;
-      padding-left: 4rem;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .header .logo .local .tuto__step {
-      flex: 1;
-      margin: 0;
-      margin-left: 2rem;
-    }
-
-    .header .logo .local .tuto__step:first-child {
-      margin-left: 0.75rem;
-      margin-top: 0;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .card__content {
-      flex: 1;
-      text-decoration: none;
-      color: #000;
-      margin-left: 21px;
-      margin-top: 15px;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .header .logo .local .footer .container {
-      flex-direction: row-reverse;
-      align-items: center;
-      gap: 7px;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .header .logo .local .footer__list {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      height: 114px;
-      gap: 16px;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .header .logo .local .footer__logo {
-      width: 137px;
-      margin: 0;
-      margin-left: 6rem;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .header .logo .local .footer__list {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      height: 114px;
-      gap: 16px;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .header .logo .local .tuto__title {
-      padding-left: 4rem;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .header .logo .local .restaurants {
-      display: flex;
-      justify-content: center;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .header .logo .local .restaurants {
-      display: flex;
-      justify-content: center;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .header .logo .local .cards {
-      grid-template-columns: repeat(2, 1fr);
-      width: 65rem;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .header .logo .local .tuto__steps {
-      display: flex;
-      max-width: 85%;
-      padding-left: 4rem;
-    }
-
-    .header .logo .local .tuto__title {
-      padding-left: 4rem;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .header .logo .local .footer__list {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      height: 114px;
-      gap: 16px;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .header .logo .local .tuto__steps {
-      display: flex;
-      max-width: 85%;
-      padding-left: 4rem;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .header .logo .local .tuto__step {
-      flex: 1;
-      margin: 0;
-      margin-left: 2rem;
-    }
-
-    .header .logo .local .tuto__step:first-child {
-      margin-left: 0.75rem;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .header .logo .local .tuto__step {
-      flex: 1;
-      margin: 0;
-      margin-left: 2rem;
-    }
+@media (min-width: 1024px) {
+  .header .logo .local .tuto__step {
+    flex: 1;
+    margin: 0;
+    margin-left: 2rem;
   }
 }
