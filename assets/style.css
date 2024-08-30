@@ -36,8 +36,7 @@ html {
   text-decoration: none;
   color: inherit;
   display: block;
-  top: 50%;
-  bottom: 4rem;
+  top: -53px;
 }
 
 @media (min-width: 1440px) {
@@ -83,6 +82,12 @@ html {
   background-color: #f6f6f6;
 }
 
+.menu__like {
+  padding-top: 49px;
+  padding-left: 30px;
+  font-size: 16px;
+}
+
 .menuItem {
   background-color: white;
   padding: 1rem;
@@ -104,6 +109,11 @@ html {
   text-overflow: ellipsis;
   overflow: hidden;
   flex: 1;
+}
+
+.menuitem__content {
+  flex: 1;
+  margin-left: 13px;
 }
 
 .menu__title .submenu {
@@ -144,10 +154,15 @@ html {
   margin-bottom: 9px;
 }
 
+.menuItem__description {
+  margin-top: 10px;
+}
+
 .menuItem__price {
   display: flex;
   justify-content: flex-end;
-  font-style: Roboto, bold #353535 15px;
+  font-weight: 700;
+  margin-top: 28px;
 }
 
 .menu__confirmation {
@@ -207,6 +222,7 @@ html {
 }
 .wrapBtn {
   margin-left: 32%;
+  padding-bottom: 30px;
 }
 
 .hero__btn:hover {
@@ -336,8 +352,9 @@ html {
 }
 .card__like {
   color: black;
-  margin-top: 54px;
   margin-left: 22px;
+  margin-top: -39px;
+  margin-right: 13px;
 }
 
 .cards {
@@ -377,7 +394,7 @@ html {
   position: relative;
   text-decoration: none;
   color: inherit;
-  display: block;
+  display: flex;
   padding: 14px 14px 0px 18px;
   justify-content: space-around;
   margin-bottom: 16px;
@@ -670,16 +687,12 @@ html {
   background-color: #353535;
   color: white;
   text-align: center;
-  padding: 0px 80px;
 }
 
 @media (max-width: 375px) {
   .footer .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    padding-left: 0;
     background-color: #353535;
-    margin-left: 0px;
     text-align: center;
   }
   .footer .container.footer__logo {
@@ -708,14 +721,17 @@ html {
     display: flex;
   }
 }
-.card__footer {
-  display: flex;
-  padding: 11px;
+@media (min-width: 375px) {
+  .card__footer {
+    display: flex;
+    padding: 0px;
+    align-items: center;
+    height: 79px;
+    margin-left: 12px;
+  }
 }
-
 .footer__list {
   list-style-type: none;
-  padding: 0;
 }
 
 .footer__listElt {
@@ -742,13 +758,22 @@ html {
   background-color: #333;
   color: white;
   text-align: center;
-  padding: 0px 80px;
+  padding-top: 0px;
 }
 
+@media (min-width: 375px) {
+  .footer {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding-top: 0px;
+  }
+}
 .footer__title {
   color: white;
   font-family: "Shrikhand", sans-serif;
-  font-size: 23px;
+  font-size: 20px;
 }
 
 @media (min-width: 1024px) {
@@ -793,7 +818,6 @@ html {
     padding: 13px;
     box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
     border-radius: 1.25rem;
-    background-color: #f6f6f6;
     align-items: flex-end;
     gap: 21px;
   }
