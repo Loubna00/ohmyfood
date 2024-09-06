@@ -2,17 +2,23 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
+    <title>Oh my Food</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <link rel="stylesheet" href="assets/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet" />
-  
   </head>
 
   <body>
-    <header>
+    <!-- Loading spinner -->
+    <div class="spinner">
+      <div class="spinner__border">
+        <div class="spinner__center"></div>
+      </div>
+    </div>
+    <header class="header">
       <img src="/assets/images/logo/ohmyfood@2x.svg" alt="Logo" class="herologo" />
     </header>
 
@@ -54,8 +60,10 @@
         <div class="container">
           <h2 class="restaurants__title">Restaurants</h2>
           <div class="cards">
+
             <a class="card" href="/menu_la_palette.html">
               <img src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="" class="card__img" />
+              <span class="card__badge">Nouveau</span>
               <footer class="card__footer">
                 <div class="card__content">
                   <h3 class="card__title">La palette du goût</h3>
@@ -132,4 +140,3 @@
     </footer>
   </body>
 </html>
-<main></main>

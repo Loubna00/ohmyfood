@@ -59,23 +59,23 @@ html {
   margin-left: 15px;
 }
 
-.menu__title .header_txt img {
-  display: flex;
-  justify-content: center;
-}
+// .menu__title .header_txt img {
+//   display: flex;
+//   justify-content: center;
+// }
 
-.menu__title .logo {
-  display: flex;
-  justify-content: center;
-}
+// .menu__title .logo {
+//   display: flex;
+//   justify-content: center;
+// }
 
-.menu__title .menu__header {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin-left: 5px;
-  margin-left: 15px;
-}
+// .menu__title .menu__header {
+//   display: flex;
+//   justify-content: center;
+//   text-align: center;
+//   margin-left: 5px;
+//   margin-left: 15px;
+// }
 
 .menu__btn {
   border: white;
@@ -85,7 +85,7 @@ html {
 .menu__like {
   padding-top: 49px;
   padding-left: 30px;
-  font-size: 16px;
+  font-size: 25px;
 }
 
 .menuItem {
@@ -107,26 +107,26 @@ html {
   max-width: 100%;
 }
 
-.menuItem__header {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  flex: 1;
-}
+// .menuItem__header {
+//   white-space: nowrap;
+//   text-overflow: ellipsis;
+//   overflow: hidden;
+//   flex: 1;
+// }
 
 .menuitem__content {
   flex: 1;
   margin-left: 13px;
 }
 
-.menu__title .submenu {
-  display: flex;
-  flex-direction: column;
-}
+// .menu__title .submenu {
+//   display: flex;
+//   flex-direction: column;
+// }
 
-.menu__title__title {
-  margin-right: 100%;
-}
+// .menu__title__title {
+//   margin-right: 100%;
+// }
 
 .menu.btn {
   display: flex;
@@ -193,7 +193,7 @@ html {
 
 .header {
   padding: 1rem 1rem;
-  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.2);
   position: relative;
   z-index: 1000;
 }
@@ -208,23 +208,9 @@ html {
   margin-left: 25%;
   padding-block: 30px;
 }
-@media (min-width: 1024px) {
-  .herologo {
-    margin-left: 18%;
-    padding-block: 30px;
-  }
-
-  .Img {
-    width: 375px;
-    height: 275px;
-    top: 63px;
-    gap: 0px;
-    opacity: 0px;
-  }
-}
 
 .wrapBtn {
-  margin-left: 32%;
+  margin-left: 39%;
   padding-bottom: 30px;
 }
 
@@ -238,17 +224,14 @@ html {
   color: inherit;
 }
 .hero__btn {
-  border: 0;
-  padding: 0.75rem 1.5rem;
-  font-weight: 500;
-  font-size: 1.1rem;
-  border-radius: 100px;
+  opacity: 1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
   color: white;
-  background-color: rgb(104, 104, 104);
-  background-image: linear-gradient(0deg, #782cd3 0%, #ff46cc 100%);
-  cursor: default;
-  transition-duration: 0.5s;
-  box-shadow: 1.25rem 1.25rem 10px rgba(0, 0, 0, 0.25);
+  padding: 15px 25px;
+  border-radius: 200px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
 }
 
 .hero {
@@ -274,12 +257,12 @@ html {
   margin-top: 0;
 }
 
-.tuto__title .tuto__steps {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  counter-reset: compteListe;
-}
+// .tuto__title .tuto__steps {
+//   margin: 0;
+//   padding: 0;
+//   list-style: none;
+//   counter-reset: compteListe;
+// }
 
 .tuto__step {
   padding: 1.5rem;
@@ -291,8 +274,15 @@ html {
   position: relative;
 }
 
-.tuto__step:last-child {
+.tuto__step:hover {
   margin-bottom: 0;
+  opacity: 0.8;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
+  background: white;
 }
 
 .tuto__step::before {
@@ -357,6 +347,8 @@ html {
   margin-left: 22px;
   margin-top: -39px;
   margin-right: 13px;
+}
+.card__like:hover {
 }
 
 .cards {
@@ -469,13 +461,21 @@ html {
 }
 
 .card__badge {
-  background-color: #99e2d0;
-  color: #1b6150;
-  padding: 0.5rem;
-  border-radius: 0.125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   position: absolute;
-  top: 42px;
-  right: 13px;
+  background: #99e2d0;
+  top: 61px;
+  right: 20px;
+  width: 10%;
+  height: 6%;
 }
 @media (min-width: 1024px) {
   .card__badge1 {
@@ -500,196 +500,188 @@ html {
   border: none;
   background-color: rgb(243, 243, 243);
   justify-content: center;
+  margin-left: 13px;
+  font-weight: 400;
 }
 
-.header .logo .local {
-  display: flex;
-  justify-content: center;
-  padding: 1rem 1rem;
-  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
-}
+// .header .logo .local {
+//   display: flex;
+//   justify-content: center;
+//   padding: 1rem 1rem;
+//   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+// }
 
-.header .logo .local header {
-  display: flex;
-  justify-content: center;
-}
+// .header .logo .local header {
+//   display: flex;
+//   justify-content: center;
+// }
 
-.header .logo .local .input-container {
-  position: relative;
-}
+// .header .logo .local .input-container {
+//   position: relative;
+// }
 
-.header .logo .local .tuto {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  padding: 1rem;
-}
+// .header .logo .local .tuto {
+//   margin-top: 2rem;
+//   margin-bottom: 2rem;
+//   padding: 1rem;
+// }
 
-.header .logo .local .tuto__steps {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  counter-reset: compteListe;
-}
+// .header .logo .local .tuto__steps {
+//   margin: 0;
+//   padding: 0;
+//   list-style: none;
+//   counter-reset: compteListe;
+// }
 
-.header .logo .local .tuto__step {
-  padding: 1.5rem;
-  margin: 1rem 0 1rem 0.75rem;
-  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
-  border-radius: 1.25rem;
-  background-color: #f6f6f6;
-  display: flex;
-  position: relative;
-}
+// .header .logo .local .tuto__step {
+//   padding: 1.5rem;
+//   margin: 1rem 0 1rem 0.75rem;
+//   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+//   border-radius: 1.25rem;
+//   background-color: #f6f6f6;
+//   display: flex;
+//   position: relative;
+// }
 
-.header .logo .local .tuto__step:first-child {
-  margin-top: 0;
-}
+// .header .logo .local .tuto__step:first-child {
+//   margin-top: 0;
+// }
 
-.header .logo .local .tuto__step:last-child {
-  margin-bottom: 0;
-}
+// .header .logo .local .tuto__step:last-child {
+//   margin-bottom: 0;
+// }
 
-.header .logo .local .tuto__step::before {
-  counter-increment: compteListe 1;
-  content: counter(compteListe) " ";
-  background: #9356dc;
-  height: 1.5rem;
-  width: 1.5rem;
-  border-radius: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  position: absolute;
-  left: -0.75rem;
-}
+// .header .logo .local .tuto__step::before {
+//   counter-increment: compteListe 1;
+//   content: counter(compteListe) " ";
+//   background: #9356dc;
+//   height: 1.5rem;
+//   width: 1.5rem;
+//   border-radius: 100px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   color: white;
+//   position: absolute;
+//   left: -0.75rem;
+// }
 
-.header .logo .local .tuto__icon {
-  margin-right: 1rem;
-  color: #7e7e7e;
-}
+// .header .logo .local .tuto__icon {
+//   margin-right: 1rem;
+//   color: #7e7e7e;
+// }
 
-.header .logo .local .tuto a {
-  text-decoration: none;
-  color: black;
-}
+// .header .logo .local .tuto a {
+//   text-decoration: none;
+//   color: black;
+// }
 
-.header .logo .local .restaurants {
-  padding: 1rem;
-  padding-top: 2rem;
-  padding-bottom: 5rem;
-  background-color: #f6f6f6;
-}
+// .header .logo .local .restaurants {
+//   padding: 1rem;
+//   padding-top: 2rem;
+//   padding-bottom: 5rem;
+//   background-color: #f6f6f6;
+// }
 
-.header .logo .local .card {
-  background-color: white;
-  border-radius: 1rem;
-  position: relative;
-  text-decoration: none;
-  color: inherit;
-  display: block;
-}
+// .header .logo .local .card {
+//   background-color: white;
+//   border-radius: 1rem;
+//   position: relative;
+//   text-decoration: none;
+//   color: inherit;
+//   display: block;
+// }
 
-.header .logo .local .card__title {
-  margin: 0;
-  margin-bottom: 0.25rem;
-}
+// .header .logo .local .card__title {
+//   margin: 0;
+//   margin-bottom: 0.25rem;
+// }
 
-.header .logo .local .card__subtitle {
-  margin: 0;
-}
+// .header .logo .local .card__subtitle {
+//   margin: 0;
+// }
 
-.header .logo .local .card__btn {
-  height: 2rem;
-  width: 2rem;
-  background-color: transparent;
-  border: transparent 0px solid;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+// .header .logo .local .card__btn {
+//   height: 2rem;
+//   width: 2rem;
+//   background-color: transparent;
+//   border: transparent 0px solid;
+//   padding: 0;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
 
-.header .logo .local .hero__btn {
-  border: 0;
-  padding: 0.75rem 1.5rem;
-  font-weight: 500;
-  font-size: 1.1rem;
-  border-radius: 100px;
-  color: white;
-  background-color: rgb(104, 104, 104);
-  background-image: linear-gradient(0deg, #782cd3 0%, #ff46cc 100%);
-  cursor: pointer;
-  transition-duration: 0.25s;
-  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
-}
+// .header .logo .local .hero__btn {
+//   border: 0;
+//   padding: 0.75rem 1.5rem;
+//   font-weight: 500;
+//   font-size: 1.1rem;
+//   border-radius: 100px;
+//   color: white;
+//   background-color: rgb(104, 104, 104);
+//   background-image: linear-gradient(0deg, #782cd3 0%, #ff46cc 100%);
+//   cursor: pointer;
+//   transition-duration: 0.25s;
+//   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+// }
 
-.header .logo .local .hero__btn:hover {
-  background-color: white;
-  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
-}
+// .header .logo .local .hero__btn:hover {
+//   background-color: white;
+//   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+//   opacity: 0.8;
+//   cursor: pointer;
+//   -webkit-transition: 0.3s;
+//   transition: 0.3s;
+//   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
+//   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
+// }
 
-.header .logo .local .hero__btn a {
-  text-decoration: none;
-  color: inherit;
-}
+// .header .logo .local .hero__btn a {
+//   text-decoration: none;
+//   color: inherit;
+// }
 
-.header .logo .local .card__footer {
-  padding: 1rem;
-  position: relative;
-  display: flex;
-  align-items: center;
-}
+// .header .logo .local .card__footer {
+//   padding: 1rem;
+//   position: relative;
+//   display: flex;
+//   align-items: center;
+// }
 
-.header .logo .local .footer {
-  background-color: #353535;
-}
+// .header .logo .local .footer {
+//   background-color: #353535;
+// }
 
-.header .logo .local .footer__logo {
-  color: white;
-  font-style: "Shrikhand", "cursive";
-  margin: 0;
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-}
+// .header .logo .local .footer__logo {
+//   color: white;
+//   font-style: "Shrikhand", "cursive";
+//   margin: 0;
+//   font-size: 1.2rem;
+//   margin-bottom: 1rem;
+// }
 
-.header .logo .local .footer__icon {
-  width: 1.2rem;
-  margin-right: 0.5rem;
-}
+// .header .logo .local .footer__icon {
+//   width: 1.2rem;
+//   margin-right: 0.5rem;
+// }
 
-.header .logo .local .footer__list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
+// .header .logo .local .footer__list {
+//   list-style: none;
+//   padding: 0;
+//   margin: 0;
+// }
 
-.header .logo .local .footer .container {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-}
-
-.header .logo .local .footer__link {
-  color: white;
-  text-decoration: none;
-}
-
-.header .logo .local .footer__link:hover {
-  text-decoration: underline;
-}
+// .header .logo .local .footer .container {
+//   display: flex;
+//   flex-direction: column;
+//   padding: 1rem;
+// }
 
 @media (min-width: 1024px) {
   .header {
     padding: unset;
   }
-}
-
-.footer {
-  width: 100%;
-  background-color: #353535;
-  color: white;
-  text-align: center;
 }
 
 @media (max-width: 375px) {
@@ -702,6 +694,9 @@ html {
       width: 100%;
     }
   }
+}
+.footer__list {
+  list-style-type: none;
 }
 
 @media (min-width: 1024px) {
@@ -727,18 +722,14 @@ html {
     display: flex;
   }
 }
-@media (min-width: 375px){
-.card__footer{
-  display: flex;
-  padding: 0px;
-  align-items: center;
-  height: 79px;
-  margin-left:12px;
-}
-}
-
-.footer__list {
-  list-style-type: none;
+@media (min-width: 375px) {
+  .card__footer {
+    display: flex;
+    padding: 0px;
+    align-items: center;
+    height: 79px;
+    margin-left: 12px;
+  }
 }
 
 .footer__listElt {
@@ -767,20 +758,6 @@ html {
   text-align: center;
   padding-top: 0px;
 }
-
-@media (min-width: 375px){
-  .footer {
-    width: 100%;
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding-top: 0px;
-  }
-}
-
-
-
-
 
 .footer__title {
   color: white;
@@ -851,6 +828,15 @@ html {
   }
 }
 
+.card:hover {
+  margin-bottom: 0px;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 10px 0px;
+  background: white;
+}
+
 @media (max-width: 1024px) {
   .hero__btn {
     margin-left: 0px;
@@ -894,26 +880,26 @@ html {
     align-items: flex-end;
   }
 }
-@media (min-width: 1024px) {
-  .header .logo .local .tuto__steps {
-    display: flex;
-    max-width: 85%;
-    padding-left: 4rem;
-  }
-}
+// @media (min-width: 1024px) {
+//   .header .logo .local .tuto__steps {
+//     display: flex;
+//     max-width: 85%;
+//     padding-left: 4rem;
+//   }
+// }
 
-@media (min-width: 1024px) {
-  .header .logo .local .tuto__step {
-    flex: 1;
-    margin: 0;
-    margin-left: 2rem;
-  }
+// @media (min-width: 1024px) {
+//   .header .logo .local .tuto__step {
+//     flex: 1;
+//     margin: 0;
+//     margin-left: 2rem;
+//   }
 
-  .header .logo .local .tuto__step:first-child {
-    margin-left: 0.75rem;
-    margin-top: 0;
-  }
-}
+//   .header .logo .tuto__step:first-child {
+//     margin-left: 0.75rem;
+//     margin-top: 0;
+//   }
+// }
 
 @media (min-width: 1024px) {
   .card__content {
@@ -925,115 +911,95 @@ html {
   }
 }
 
-@media (min-width: 1024px) {
-  .header .logo .local .footer .container {
-    flex-direction: row-reverse;
-    align-items: center;
-    gap: 7px;
-  }
-}
+// @media (min-width: 1024px) {
+//   .header .logo .footer .container {
+//     flex-direction: row-reverse;
+//     align-items: center;
+//     gap: 7px;
+//   }
+// }
 
-@media (min-width: 1024px) {
-  .header .logo .local .footer__list {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    height: 114px;
-    gap: 16px;
-  }
-}
+// @media (min-width: 1024px) {
+//   .header .logo .footer__logo {
+//     width: 137px;
+//     margin: 0;
+//     margin-left: 6rem;
+//   }
+// }
 
-@media (min-width: 1024px) {
-  .header .logo .local .footer__logo {
-    width: 137px;
-    margin: 0;
-    margin-left: 6rem;
-  }
-}
+// @media (min-width: 1024px) {
+//   .header .logo .footer__list {
+//     display: flex;
+//     align-items: center;
+//     justify-content: flex-start;
+//     height: 114px;
+//     gap: 16px;
+//   }
+// }
 
-@media (min-width: 1024px) {
-  .header .logo .local .footer__list {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    height: 114px;
-    gap: 16px;
-  }
-}
+// @media (min-width: 1024px) {
+//   .header .logo .tuto__title {
+//     padding-left: 4rem;
+//   }
+// }
 
-@media (min-width: 1024px) {
-  .header .logo .local .tuto__title {
-    padding-left: 4rem;
-  }
-}
+// @media (min-width: 1024px) {
+//   .header .logo .restaurants {
+//     display: flex;
+//     justify-content: center;
+//   }
+// }
 
-@media (min-width: 1024px) {
-  .header .logo .local .restaurants {
-    display: flex;
-    justify-content: center;
-  }
-}
+// @media (min-width: 1024px) {
+//   .header .logo .restaurants {
+//     display: flex;
+//     justify-content: center;
+//   }
+// }
 
-@media (min-width: 1024px) {
-  .header .logo .local .restaurants {
-    display: flex;
-    justify-content: center;
-  }
-}
+// @media (min-width: 1024px) {
+//   .header .logo .cards {
+//     grid-template-columns: repeat(2, 1fr);
+//     width: 65rem;
+//   }
+// }
 
-@media (min-width: 1024px) {
-  .header .logo .local .cards {
-    grid-template-columns: repeat(2, 1fr);
-    width: 65rem;
-  }
-}
+// @media (min-width: 1024px) {
+//   .header .logo .tuto__steps {
+//     display: flex;
+//     max-width: 85%;
+//     padding-left: 4rem;
+//   }
 
-@media (min-width: 1024px) {
-  .header .logo .local .tuto__steps {
-    display: flex;
-    max-width: 85%;
-    padding-left: 4rem;
-  }
+//   .header .logo .tuto__title {
+//     padding-left: 4rem;
+//   }
+// }
 
-  .header .logo .local .tuto__title {
-    padding-left: 4rem;
-  }
-}
+// @media (min-width: 1024px) {
+//   .header .logo .tuto__steps {
+//     display: flex;
+//     max-width: 85%;
+//     padding-left: 4rem;
+//   }
+// }
 
-@media (min-width: 1024px) {
-  .header .logo .local .footer__list {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    height: 114px;
-    gap: 16px;
-  }
-}
+// @media (min-width: 1024px) {
+//   .header .logo .local .tuto__step {
+//     flex: 1;
+//     margin: 0;
+//     margin-left: 2rem;
+//   }
 
-@media (min-width: 1024px) {
-  .header .logo .local .tuto__steps {
-    display: flex;
-    max-width: 85%;
-    padding-left: 4rem;
-  }
-}
+//   .header .logo .local .tuto__step:first-child {
+//     margin-left: 0.75rem;
+//   }
+// }
 
-@media (min-width: 1024px) {
-  .header .logo .local .tuto__step {
-    flex: 1;
-    margin: 0;
-    margin-left: 2rem;
-  }
-
-  .header .logo .local .tuto__step:first-child {
-    margin-left: 0.75rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .header .logo .local .tuto__step {
-    flex: 1;
-    margin: 0;
-    margin-left: 2rem;
-  }
-}
+// @media (min-width: 1024px) {
+//   .header .logo .local .tuto__step {
+//     flex: 1;
+//     margin: 0;
+//     margin-left: 2rem;
+//   }
+// }
