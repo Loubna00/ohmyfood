@@ -39,15 +39,16 @@ html {
   top: -53px;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
   .menu.container {
     display: flex;
     justify-content: center;
     flex-direction: column;
     padding-left: 9%;
-    margin-left: 19%;
+    margin-left: 14%;
     padding-right: 9%;
-    margin-right: 18%;
+    margin-right: 14%;
+    top: -46px;
   }
 }
 .menu__title {
@@ -55,10 +56,17 @@ html {
   justify-content: center;
   font-family: "Shrikhand", sans-serif;
   color: #101010;
-  margin-top: 50px;
+  margin-top: 80px;
   margin-left: 15px;
+  font-size: 27px;
 }
 
+@media (min-width: 1024px) {
+  .menu__title {
+    margin-top: 52px;
+    margin-left: 21px;
+  }
+}
 .menu__btn {
   border: white;
   background-color: #f6f6f6;
@@ -101,25 +109,22 @@ html {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding-left: 21%;
-  padding-right: 21%;
+  margin-left: -7px;
+  margin-top: -73px;
 }
 
-@media (min-width: 375px) {
-  .submenus {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 2%;
-    margin-left: 17px;
-  }
-}
 .submenu__title {
   -webkit-text-decoration: underline #99e2d0 3px;
           text-decoration: underline #99e2d0 3px;
-  margin-bottom: 9px;
+  margin-bottom: -29px;
+  padding: 34px;
 }
 
+@media (min-width: 1024px) {
+  .submenu__title {
+    margin-bottom: -29px;
+  }
+}
 .menuItem__description {
   margin-top: 10px;
 }
@@ -150,11 +155,6 @@ html {
   justify-content: center;
 }
 
-.fa-solid {
-  color: #000;
-  margin-top: 25px;
-}
-
 .header {
   padding: 1rem 1rem;
   box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.2);
@@ -169,13 +169,12 @@ html {
 }
 
 .herologo {
-  margin-left: 25%;
-  padding-block: 30px;
+  margin-left: 13%;
 }
 
 .wrapBtn {
-  margin-left: 39%;
   padding-bottom: 30px;
+  text-align: center;
 }
 
 .hero__btn:hover {
@@ -206,13 +205,18 @@ html {
 
 .hero__title {
   margin: 0;
-  font-size: 40px;
+  font-size: 25px;
   font-weight: bold;
 }
 
+@media (min-width: 1024px) {
+  .hero__title {
+    font-size: 37px;
+  }
+}
 .hero__subtitle {
   font-weight: 300;
-  margin: 1.5rem 0;
+  margin: 13px 0;
   padding-bottom: 2rem;
 }
 
@@ -267,14 +271,15 @@ html {
     padding: 29px;
   }
 }
+.text {
+  margin-left: 8px;
+}
+
 .restaurants {
   padding: 1rem;
   padding-top: 2rem;
   padding-bottom: 5rem;
   background-color: #f6f6f6;
-  display: flex;
-  flex-wrap: wrap;
-  position: center;
 }
 
 .local {
@@ -289,6 +294,7 @@ html {
 .menu__header {
   display: flex;
   justify-content: flex-start;
+  height: 12rem;
 }
 
 @media (min-width: 1024px) {
@@ -298,24 +304,36 @@ html {
 }
 .card__like {
   color: black;
-  margin-left: 22px;
-  margin-top: -39px;
-  margin-right: 13px;
+  margin-bottom: 7rem;
+  margin-right: 20px;
+}
+
+@media (min-width: 1024px) {
+  .card__like {
+    margin-bottom: 2rem;
+  }
+}
+.card_heart {
+  margin-top: 8px;
 }
 
 .cards {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  -moz-column-gap: 4rem;
-       column-gap: 4rem;
-  row-gap: 4rem;
-  margin-top: 10px;
+  -moz-column-gap: 6rem;
+  column-gap: 6rem;
+  row-gap: 1rem;
+  margin-top: 7px;
 }
 @media (min-width: 1024px) {
   .cards {
     grid-template-columns: repeat(2, 1fr);
     width: 65rem;
   }
+}
+
+.card__container {
+  height: 14rem;
 }
 
 @media (min-width: 1024px) {
@@ -332,6 +350,7 @@ html {
   .cards {
     grid-template-columns: repeat(2, 1fr);
     width: 65rem;
+    margin-left: 7rem;
   }
 }
 .cardsmenu {
@@ -341,9 +360,9 @@ html {
   text-decoration: none;
   color: inherit;
   display: flex;
-  padding: 14px 14px 0px 18px;
+  padding: 11px 18px 0px 15px;
   justify-content: space-around;
-  margin-bottom: 16px;
+  margin-bottom: 29px;
 }
 
 .cardmenu {
@@ -362,6 +381,11 @@ html {
      object-fit: cover;
 }
 
+@media (min-width: 1024px) {
+  .heroImg {
+    max-height: 24rem;
+  }
+}
 /*Enlever les doublons*/
 .container {
   max-width: 1280px;
@@ -369,6 +393,15 @@ html {
   position: relative;
 }
 
+.restaurants__title {
+  margin-top: 44px;
+}
+
+@media (min-width: 1024px) {
+  .restaurants__title {
+    margin-top: unset;
+  }
+}
 .main {
   display: flex;
   justify-content: center;
@@ -404,15 +437,23 @@ html {
 }
 
 .card__img {
-  height: 15rem;
+  height: 83%;
   width: 100%;
   border: transparent solid 0px;
   border-radius: 1rem 1rem 0 0;
   box-shadow: none;
+  row-gap: 3rem;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
+  margin-top: 2px;
 }
 
+@media (min-width: 1024px) {
+  .card__img {
+    height: 12rem;
+    margin-top: 24px;
+  }
+}
 .card__badge {
   display: flex;
   justify-content: center;
@@ -421,33 +462,35 @@ html {
   background: #99e2d0;
   top: 61px;
   right: 20px;
-  width: 10%;
-  height: 6%;
+  width: 23%;
+  height: 2%;
 }
 
 @media (min-width: 1024px) {
-  .card__badge1 {
+  .card__badge {
     padding: unset;
     box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
-    border-radius: 1.25rem;
+    width: 13%;
+    height: 4%;
   }
 }
 .card__content {
   flex: 1;
   text-decoration: none;
   color: #000;
+  margin-top: -83px;
+  font-size: 16px;
 }
 
 /*style.css*/
 .search-input {
   font-size: 18px;
-  font-weight: bold;
+  font-weight: bold 400;
   color: #000;
   border: none;
   background-color: rgb(243, 243, 243);
   justify-content: center;
   margin-left: 13px;
-  font-weight: 400;
 }
 
 @media (min-width: 1024px) {
@@ -455,18 +498,21 @@ html {
     padding: unset;
   }
 }
-@media (max-width: 375px) {
-  .footer .container {
-    padding-left: 0;
-    background-color: #353535;
-    text-align: center;
-  }
-  .footer .container.footer__logo {
-    width: 100%;
-  }
+.footer .container {
+  padding-left: 0;
+  background-color: #353535;
+  text-align: center;
 }
+.footer .container.footer__logo {
+  width: 100%;
+}
+
 .footer__list {
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 11px;
 }
 
 @media (min-width: 1024px) {
@@ -479,32 +525,40 @@ html {
     list-style: none;
     padding: 0;
     margin: 0;
+    flex-direction: unset;
+    text-align: unset;
+    margin-left: unset;
   }
 }
 @media (min-width: 1024px) {
   .footer .container {
     flex-direction: row-reverse;
     align-items: center;
-    gap: 84px;
-    padding: 10px;
-    margin-top: 90px;
+    gap: 24px;
+    padding: 0;
+    margin-top: 0;
     display: flex;
   }
 }
-@media (min-width: 375px) {
-  .card__footer {
-    display: flex;
-    padding: 0px;
-    align-items: center;
-    height: 79px;
-    margin-left: 12px;
-  }
+.card__footer {
+  display: flex;
+  padding: 0px;
+  align-items: center;
+  height: 79px;
+  margin-left: 12px;
 }
+
 .footer__listElt {
   display: inline;
   margin: 0 10px;
+  padding-bottom: 8px;
 }
 
+@media (min-width: 1024px) {
+  .footer__listElt {
+    padding-bottom: unset;
+  }
+}
 .footer__link {
   color: white;
   text-decoration: none;
@@ -524,20 +578,18 @@ html {
   background-color: #333;
   color: white;
   text-align: center;
-  padding-top: 0px;
+  margin-top: -20px;
 }
 
 .footer__title {
   color: white;
   font-family: "Shrikhand", sans-serif;
   font-size: 20px;
+  text-align: left;
+  margin-left: 20px;
+  margin-bottom: 18px;
 }
 
-@media (min-width: 1024px) {
-  .fa-solid {
-    color: #000;
-  }
-}
 @media (min-width: 1024px) {
   .tuto__step {
     padding: 1.5rem;
@@ -555,7 +607,7 @@ html {
   .tuto__steps {
     list-style: none;
     counter-reset: compteListe;
-    display: block;
+    display: flex;
   }
 }
 @media (min-width: 1440px) {
@@ -582,9 +634,15 @@ html {
 .card {
   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
   border-radius: 1.25rem;
+  height: 16rem;
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 1024px) {
+  .card {
+    height: unset;
+  }
+}
+@media (min-width: 1024px) {
   .restaurants {
     padding: 1rem;
     padding-top: 2rem;
@@ -601,7 +659,7 @@ html {
   background: white;
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 1024px) {
   .hero__btn {
     margin-left: 0px;
     border: 0;

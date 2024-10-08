@@ -38,15 +38,16 @@ html {
   display: block;
   top: -53px;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
   .menu.container {
     display: flex;
     justify-content: center;
     flex-direction: column;
     padding-left: 9%;
-    margin-left: 19%;
+    margin-left: 14%;
     padding-right: 9%;
-    margin-right: 18%;
+    margin-right: 14%;
+    top: -46px;
   }
 }
 
@@ -55,27 +56,17 @@ html {
   justify-content: center;
   font-family: "Shrikhand", sans-serif;
   color: #101010;
-  margin-top: 50px;
+  margin-top: 80px;
   margin-left: 15px;
+  font-size: 27px;
 }
 
-// .menu__title .header_txt img {
-//   display: flex;
-//   justify-content: center;
-// }
-
-// .menu__title .logo {
-//   display: flex;
-//   justify-content: center;
-// }
-
-// .menu__title .menu__header {
-//   display: flex;
-//   justify-content: center;
-//   text-align: center;
-//   margin-left: 5px;
-//   margin-left: 15px;
-// }
+@media (min-width: 1024px) {
+  .menu__title {
+    margin-top: 52px;
+    margin-left: 21px;
+  }
+}
 
 .menu__btn {
   border: white;
@@ -107,26 +98,10 @@ html {
   max-width: 100%;
 }
 
-// .menuItem__header {
-//   white-space: nowrap;
-//   text-overflow: ellipsis;
-//   overflow: hidden;
-//   flex: 1;
-// }
-
 .menuitem__content {
   flex: 1;
   margin-left: 13px;
 }
-
-// .menu__title .submenu {
-//   display: flex;
-//   flex-direction: column;
-// }
-
-// .menu__title__title {
-//   margin-right: 100%;
-// }
 
 .menu.btn {
   display: flex;
@@ -138,22 +113,21 @@ html {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding-left: 21%;
-  padding-right: 21%;
-}
-@media (min-width: 375px) {
-  .submenus {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 2%;
-    margin-left: 17px;
-  }
+  margin-left: -7px;
+  margin-top: -73px;
 }
 
 .submenu__title {
   text-decoration: underline #99e2d0 3px;
-  margin-bottom: 9px;
+  margin-bottom: -29px;
+  padding: 34px;
+}
+
+@media (min-width: 1024px) {
+  .submenu__title {
+    margin-bottom: -29px;
+    
+  }
 }
 
 .menuItem__description {
@@ -186,11 +160,6 @@ html {
   justify-content: center;
 }
 
-.fa-solid {
-  color: #000;
-  margin-top: 25px;
-}
-
 .header {
   padding: 1rem 1rem;
   box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.2);
@@ -205,13 +174,12 @@ html {
 }
 
 .herologo {
-  margin-left: 25%;
-  padding-block: 30px;
+  margin-left: 13%;
 }
 
 .wrapBtn {
-  margin-left: 39%;
   padding-bottom: 30px;
+  text-align: center;
 }
 
 .hero__btn:hover {
@@ -243,26 +211,24 @@ html {
 
 .hero__title {
   margin: 0;
-  font-size: 40px;
+  font-size: 25px;
   font-weight: bold;
+}
+@media (min-width: 1024px) {
+  .hero__title {
+    font-size: 37px;
+  }
 }
 
 .hero__subtitle {
   font-weight: 300;
-  margin: 1.5rem 0;
+  margin: 13px 0;
   padding-bottom: 2rem;
 }
 
 .tuto__title {
   margin-top: 0;
 }
-
-// .tuto__title .tuto__steps {
-//   margin: 0;
-//   padding: 0;
-//   list-style: none;
-//   counter-reset: compteListe;
-// }
 
 .tuto__step {
   padding: 1.5rem;
@@ -313,14 +279,15 @@ html {
   }
 }
 
+.text {
+  margin-left: 8px;
+}
+
 .restaurants {
   padding: 1rem;
   padding-top: 2rem;
   padding-bottom: 5rem;
   background-color: #f6f6f6;
-  display: flex;
-  flex-wrap: wrap;
-  position: center;
 }
 
 .local {
@@ -335,6 +302,7 @@ html {
 .menu__header {
   display: flex;
   justify-content: flex-start;
+  height: 12rem;
 }
 @media (min-width: 1024px) {
   .menu__header {
@@ -344,24 +312,35 @@ html {
 
 .card__like {
   color: black;
-  margin-left: 22px;
-  margin-top: -39px;
-  margin-right: 13px;
+  margin-bottom: 7rem;
+  margin-right: 20px;
 }
-.card__like:hover {
+@media (min-width: 1024px) {
+  .card__like {
+    margin-bottom: 2rem;
+  }
+}
+
+.card_heart {
+  margin-top: 8px;
 }
 
 .cards {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  column-gap: 4rem;
-  row-gap: 4rem;
-  margin-top: 10px;
+  -moz-column-gap: 6rem;
+  column-gap: 6rem;
+  row-gap: 1rem;
+  margin-top: 7px;
 
   @media (min-width: 1024px) {
     grid-template-columns: repeat(2, 1fr);
     width: 65rem;
   }
+}
+
+.card__container {
+  height: 14rem;
 }
 
 @media (min-width: 1024px) {
@@ -379,6 +358,7 @@ html {
   .cards {
     grid-template-columns: repeat(2, 1fr);
     width: 65rem;
+    margin-left: 7rem;
   }
 }
 
@@ -389,9 +369,9 @@ html {
   text-decoration: none;
   color: inherit;
   display: flex;
-  padding: 14px 14px 0px 18px;
+  padding: 11px 18px 0px 15px;
   justify-content: space-around;
-  margin-bottom: 16px;
+  margin-bottom: 29px;
 }
 
 .cardmenu {
@@ -408,12 +388,26 @@ html {
   width: 100%;
   object-fit: cover;
 }
+@media (min-width: 1024px) {
+  .heroImg {
+    max-height: 24rem;
+  }
+}
 
 /*Enlever les doublons*/
 .container {
   max-width: 1280px;
   margin: auto;
   position: relative;
+}
+
+.restaurants__title {
+  margin-top: 44px;
+}
+@media (min-width: 1024px) {
+  .restaurants__title {
+    margin-top: unset;
+  }
 }
 
 .main {
@@ -451,13 +445,21 @@ html {
 }
 
 .card__img {
-  height: 15rem;
+  height: 83%;
   width: 100%;
   border: transparent solid 0px;
   border-radius: 1rem 1rem 0 0;
   box-shadow: none;
-  -o-object-fit: cover;
+  row-gap: 3rem;
   object-fit: cover;
+  margin-top: 2px;
+}
+
+@media (min-width: 1024px) {
+  .card__img {
+    height: 12rem;
+    margin-top: 24px;
+  }
 }
 
 .card__badge {
@@ -474,14 +476,16 @@ html {
   background: #99e2d0;
   top: 61px;
   right: 20px;
-  width: 10%;
-  height: 6%;
+  width: 23%;
+  height: 2%;
 }
+
 @media (min-width: 1024px) {
-  .card__badge1 {
+  .card__badge {
     padding: unset;
     box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
-    border-radius: 1.25rem;
+    width: 13%;
+    height: 4%;
   }
 }
 
@@ -489,194 +493,21 @@ html {
   flex: 1;
   text-decoration: none;
   color: #000;
+  margin-top: -83px;
+  font-size: 16px;
 }
 
 /*style.css*/
 
 .search-input {
   font-size: 18px;
-  font-weight: bold;
+  font-weight: bold 400;
   color: #000;
   border: none;
   background-color: rgb(243, 243, 243);
   justify-content: center;
   margin-left: 13px;
-  font-weight: 400;
 }
-
-// .header .logo .local {
-//   display: flex;
-//   justify-content: center;
-//   padding: 1rem 1rem;
-//   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
-// }
-
-// .header .logo .local header {
-//   display: flex;
-//   justify-content: center;
-// }
-
-// .header .logo .local .input-container {
-//   position: relative;
-// }
-
-// .header .logo .local .tuto {
-//   margin-top: 2rem;
-//   margin-bottom: 2rem;
-//   padding: 1rem;
-// }
-
-// .header .logo .local .tuto__steps {
-//   margin: 0;
-//   padding: 0;
-//   list-style: none;
-//   counter-reset: compteListe;
-// }
-
-// .header .logo .local .tuto__step {
-//   padding: 1.5rem;
-//   margin: 1rem 0 1rem 0.75rem;
-//   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
-//   border-radius: 1.25rem;
-//   background-color: #f6f6f6;
-//   display: flex;
-//   position: relative;
-// }
-
-// .header .logo .local .tuto__step:first-child {
-//   margin-top: 0;
-// }
-
-// .header .logo .local .tuto__step:last-child {
-//   margin-bottom: 0;
-// }
-
-// .header .logo .local .tuto__step::before {
-//   counter-increment: compteListe 1;
-//   content: counter(compteListe) " ";
-//   background: #9356dc;
-//   height: 1.5rem;
-//   width: 1.5rem;
-//   border-radius: 100px;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   color: white;
-//   position: absolute;
-//   left: -0.75rem;
-// }
-
-// .header .logo .local .tuto__icon {
-//   margin-right: 1rem;
-//   color: #7e7e7e;
-// }
-
-// .header .logo .local .tuto a {
-//   text-decoration: none;
-//   color: black;
-// }
-
-// .header .logo .local .restaurants {
-//   padding: 1rem;
-//   padding-top: 2rem;
-//   padding-bottom: 5rem;
-//   background-color: #f6f6f6;
-// }
-
-// .header .logo .local .card {
-//   background-color: white;
-//   border-radius: 1rem;
-//   position: relative;
-//   text-decoration: none;
-//   color: inherit;
-//   display: block;
-// }
-
-// .header .logo .local .card__title {
-//   margin: 0;
-//   margin-bottom: 0.25rem;
-// }
-
-// .header .logo .local .card__subtitle {
-//   margin: 0;
-// }
-
-// .header .logo .local .card__btn {
-//   height: 2rem;
-//   width: 2rem;
-//   background-color: transparent;
-//   border: transparent 0px solid;
-//   padding: 0;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-// }
-
-// .header .logo .local .hero__btn {
-//   border: 0;
-//   padding: 0.75rem 1.5rem;
-//   font-weight: 500;
-//   font-size: 1.1rem;
-//   border-radius: 100px;
-//   color: white;
-//   background-color: rgb(104, 104, 104);
-//   background-image: linear-gradient(0deg, #782cd3 0%, #ff46cc 100%);
-//   cursor: pointer;
-//   transition-duration: 0.25s;
-//   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
-// }
-
-// .header .logo .local .hero__btn:hover {
-//   background-color: white;
-//   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
-//   opacity: 0.8;
-//   cursor: pointer;
-//   -webkit-transition: 0.3s;
-//   transition: 0.3s;
-//   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
-//   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
-// }
-
-// .header .logo .local .hero__btn a {
-//   text-decoration: none;
-//   color: inherit;
-// }
-
-// .header .logo .local .card__footer {
-//   padding: 1rem;
-//   position: relative;
-//   display: flex;
-//   align-items: center;
-// }
-
-// .header .logo .local .footer {
-//   background-color: #353535;
-// }
-
-// .header .logo .local .footer__logo {
-//   color: white;
-//   font-style: "Shrikhand", "cursive";
-//   margin: 0;
-//   font-size: 1.2rem;
-//   margin-bottom: 1rem;
-// }
-
-// .header .logo .local .footer__icon {
-//   width: 1.2rem;
-//   margin-right: 0.5rem;
-// }
-
-// .header .logo .local .footer__list {
-//   list-style: none;
-//   padding: 0;
-//   margin: 0;
-// }
-
-// .header .logo .local .footer .container {
-//   display: flex;
-//   flex-direction: column;
-//   padding: 1rem;
-// }
 
 @media (min-width: 1024px) {
   .header {
@@ -684,19 +515,22 @@ html {
   }
 }
 
-@media (max-width: 375px) {
-  .footer .container {
-    padding-left: 0;
-    background-color: #353535;
-    text-align: center;
+.footer .container {
+  padding-left: 0;
+  background-color: #353535;
+  text-align: center;
 
-    &.footer__logo {
-      width: 100%;
-    }
+  &.footer__logo {
+    width: 100%;
   }
 }
+
 .footer__list {
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 11px;
 }
 
 @media (min-width: 1024px) {
@@ -709,6 +543,9 @@ html {
     list-style: none;
     padding: 0;
     margin: 0;
+    flex-direction: unset;
+    text-align: unset;
+    margin-left: unset;
   }
 }
 
@@ -716,25 +553,29 @@ html {
   .footer .container {
     flex-direction: row-reverse;
     align-items: center;
-    gap: 84px;
-    padding: 10px;
-    margin-top: 90px;
+    gap: 24px;
+    padding: 0;
+    margin-top: 0;
     display: flex;
   }
 }
-@media (min-width: 375px) {
-  .card__footer {
-    display: flex;
-    padding: 0px;
-    align-items: center;
-    height: 79px;
-    margin-left: 12px;
-  }
+.card__footer {
+  display: flex;
+  padding: 0px;
+  align-items: center;
+  height: 79px;
+  margin-left: 12px;
 }
 
 .footer__listElt {
   display: inline;
   margin: 0 10px;
+  padding-bottom: 8px;
+}
+@media (min-width: 1024px) {
+  .footer__listElt {
+    padding-bottom: unset;
+  }
 }
 
 .footer__link {
@@ -756,19 +597,16 @@ html {
   background-color: #333;
   color: white;
   text-align: center;
-  padding-top: 0px;
+  margin-top: -20px;
 }
 
 .footer__title {
   color: white;
   font-family: "Shrikhand", sans-serif;
   font-size: 20px;
-}
-
-@media (min-width: 1024px) {
-  .fa-solid {
-    color: #000;
-  }
+  text-align: left;
+  margin-left: 20px;
+  margin-bottom: 18px;
 }
 
 @media (min-width: 1024px) {
@@ -788,7 +626,7 @@ html {
   .tuto__steps {
     list-style: none;
     counter-reset: compteListe;
-    display: block;
+    display: flex;
   }
 }
 @media (min-width: 1440px) {
@@ -817,9 +655,14 @@ html {
 .card {
   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
   border-radius: 1.25rem;
+  height: 16rem;
 }
-
-@media (max-width: 1024px) {
+@media (min-width: 1024px) {
+  .card {
+    height: unset;
+  }
+}
+@media (min-width: 1024px) {
   .restaurants {
     padding: 1rem;
     padding-top: 2rem;
@@ -837,7 +680,7 @@ html {
   background: white;
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 1024px) {
   .hero__btn {
     margin-left: 0px;
     border: 0;
@@ -880,26 +723,6 @@ html {
     align-items: flex-end;
   }
 }
-// @media (min-width: 1024px) {
-//   .header .logo .local .tuto__steps {
-//     display: flex;
-//     max-width: 85%;
-//     padding-left: 4rem;
-//   }
-// }
-
-// @media (min-width: 1024px) {
-//   .header .logo .local .tuto__step {
-//     flex: 1;
-//     margin: 0;
-//     margin-left: 2rem;
-//   }
-
-//   .header .logo .tuto__step:first-child {
-//     margin-left: 0.75rem;
-//     margin-top: 0;
-//   }
-// }
 
 @media (min-width: 1024px) {
   .card__content {
@@ -910,96 +733,3 @@ html {
     margin-top: 15px;
   }
 }
-
-// @media (min-width: 1024px) {
-//   .header .logo .footer .container {
-//     flex-direction: row-reverse;
-//     align-items: center;
-//     gap: 7px;
-//   }
-// }
-
-// @media (min-width: 1024px) {
-//   .header .logo .footer__logo {
-//     width: 137px;
-//     margin: 0;
-//     margin-left: 6rem;
-//   }
-// }
-
-// @media (min-width: 1024px) {
-//   .header .logo .footer__list {
-//     display: flex;
-//     align-items: center;
-//     justify-content: flex-start;
-//     height: 114px;
-//     gap: 16px;
-//   }
-// }
-
-// @media (min-width: 1024px) {
-//   .header .logo .tuto__title {
-//     padding-left: 4rem;
-//   }
-// }
-
-// @media (min-width: 1024px) {
-//   .header .logo .restaurants {
-//     display: flex;
-//     justify-content: center;
-//   }
-// }
-
-// @media (min-width: 1024px) {
-//   .header .logo .restaurants {
-//     display: flex;
-//     justify-content: center;
-//   }
-// }
-
-// @media (min-width: 1024px) {
-//   .header .logo .cards {
-//     grid-template-columns: repeat(2, 1fr);
-//     width: 65rem;
-//   }
-// }
-
-// @media (min-width: 1024px) {
-//   .header .logo .tuto__steps {
-//     display: flex;
-//     max-width: 85%;
-//     padding-left: 4rem;
-//   }
-
-//   .header .logo .tuto__title {
-//     padding-left: 4rem;
-//   }
-// }
-
-// @media (min-width: 1024px) {
-//   .header .logo .tuto__steps {
-//     display: flex;
-//     max-width: 85%;
-//     padding-left: 4rem;
-//   }
-// }
-
-// @media (min-width: 1024px) {
-//   .header .logo .local .tuto__step {
-//     flex: 1;
-//     margin: 0;
-//     margin-left: 2rem;
-//   }
-
-//   .header .logo .local .tuto__step:first-child {
-//     margin-left: 0.75rem;
-//   }
-// }
-
-// @media (min-width: 1024px) {
-//   .header .logo .local .tuto__step {
-//     flex: 1;
-//     margin: 0;
-//     margin-left: 2rem;
-//   }
-// }
