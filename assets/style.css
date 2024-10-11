@@ -113,6 +113,13 @@ html {
   margin-top: -73px;
 }
 
+@media (min-width: 1024px) {
+  .submenus {
+    margin-left: 73px;
+    margin-right: 72px;
+    margin-top: -83px;
+  }
+}
 .submenu__title {
   -webkit-text-decoration: underline #99e2d0 3px;
           text-decoration: underline #99e2d0 3px;
@@ -191,11 +198,16 @@ html {
   opacity: 1;
   background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
   color: white;
-  padding: 15px 25px;
+  padding: 17px 58px;
   border-radius: 200px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
 }
 
+@media (min-width: 1024px) {
+  .hero__btn {
+    padding: 17px 59px;
+  }
+}
 .hero {
   padding: 2rem;
   padding-bottom: 5rem;
@@ -314,9 +326,14 @@ html {
   }
 }
 .card_heart {
-  margin-top: 8px;
+  margin-top: 40px;
 }
 
+@media (min-width: 1024px) {
+  .card_heart {
+    margin-top: -58px;
+  }
+}
 .cards {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -581,6 +598,11 @@ html {
   margin-top: -20px;
 }
 
+@media (min-width: 1024px) {
+  .footer {
+    margin-top: -22px;
+  }
+}
 .footer__title {
   color: white;
   font-family: "Shrikhand", sans-serif;
@@ -624,7 +646,7 @@ html {
 }
 @media (min-width: 1024px) {
   .cardsmenu {
-    padding: 13px;
+    padding: 4px;
     box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
     border-radius: 1.25rem;
     align-items: flex-end;
@@ -663,7 +685,7 @@ html {
   .hero__btn {
     margin-left: 0px;
     border: 0;
-    padding: 0.75rem 1.5rem;
+    padding: 12px 46px;
     font-weight: 500;
     font-size: 1.1rem;
     border-radius: 100px;
@@ -673,6 +695,7 @@ html {
     cursor: default;
     transition-duration: 0.5s;
     box-shadow: 1.25rem 1.25rem 10px rgba(0, 0, 0, 0.25);
+    margin-top: 26px;
   }
 }
 .card__btn {
